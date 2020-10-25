@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dz 3</title>
+	<style>
+		.dblock {
+			display: block;
+		}
+		div, .dblock {
+			margin: 10px 0;
+		}
+	</style>
+</head>
+<body>
+	<h1>Dz 3</h1>
+	<form action="">
+		<label>Ваше имя
+			<input type="text" placeholder="Введите имя" class="dblock">
+		</label>
+		<label>Ваша фамилия
+			<input type="text" placeholder="Введите фамилию" class="dblock">
+		</label>
+		<label>Ваш email
+			<input type="email" placeholder="Введите email" class="dblock">
+		</label>
+		<label>Вашa дата рождения
+			<input type="text" placeholder="Дд-мм-гггг" class="dblock">
+		</label>
+		<label>Ваш телефон
+			<input type="tel" placeholder="Введите телефон" class="dblock">
+		</label>
+
+		<label class="dblock">Выберите размер</label>
+		<div><label><input type="radio" name="size">XS</label></div>
+		<div><label><input type="radio" name="size">S</label></div>
+		<div><label><input type="radio" name="size">M</label></div>
+		<div><label><input type="radio" name="size">L</label></div>
+
+		<label class="dblock">Дополнительные опции</label>
+		<div><label><input type="checkbox" name="options">Доставка</label></div>
+		<div><label><input type="checkbox" name="options">Оплата картой</label></div>
+		<div><label><input type="checkbox" name="options">Перезвоните мне</label></div>
+
+		<label class="dblock">Выберите цвет</label>
+		<select name="colors" id="colors">
+			<option value="red">Красный</option>
+			<option value="blue">Синий</option>
+			<option value="white">Белый</option>
+			<option value="black">Черный</option>
+		</select>
+		<input type="submit" value="Отправить" class="dblock">
+	</form>
+</body>
+</html>
