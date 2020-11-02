@@ -9,6 +9,7 @@ $(document).ready(function() {
 		loop: true,
     	margin: 30
 	});
+	
 	owl.on("mousewheel", ".owl-wrapper", function (e) {
 		if (e.deltaY > 0) {
 			owl.trigger("owl.prev");
@@ -27,7 +28,7 @@ $(document).ready(function() {
 
 	var owl1 = $(".rent_owl-carousel");
 	owl1.owlCarousel ({
-		items : 1,
+		items: 1,
 		nav: false,
 		pagination: false,
 		loop: true,

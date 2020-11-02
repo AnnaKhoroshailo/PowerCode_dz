@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel_2.3.4.min.css" />
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div class="header_top">
+			<a href="#" class="logo">
+				<img src="img/logo.svg" alt="">
+			</a>
+			<nav class="header_nav">
+				<ul class="header_menu flex">
+					<li><a href="">О компании</a></li>
+					<li><a href="">Портфолио</a></li>
+					<li><a href="">Каталог</a></li>
+					<li><a href="">Сервис</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header-content">
+			<div class="container">
+				<h1>Светотехническое оборудование в Петербурге</h1>
+				<p class="header-content_description">Продажа, аренда светотехнического оборудования. Оформление официальных мероприятий под ключ.</p>
+				<button class="border-button">Перейти</button>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="our-projects">
+			<div class="container">
+				<div class="flex our-projects_top-line">
+					<h2>Наши проекты</h2>
+					<div class="owl-carousel_nav">
+						<button><img src="img/prev-button.svg" alt="" class="our-projects_prev-button"></button>
+						<button><img src="img/next-button.svg" alt="" class="our-projects_next-button"></button>
+					</div>
+				</div>
+				<div class="our-projects_slider-container">
+					<div class="our-projects_owl-carousel owl-carousel owl-theme">
+						<div class="our-projects_slide-item pos-rel">
+							<img src="img/project1.jpg" alt="" class="pos-rel">
+							<div class="our-projects_slide-description pos-abs">
+								<h4>Сск “Олимп”</h4>
+								<p>Световое оформление форума “Шубы-2019”</p>
+							</div>
+						</div>
+						<div class="our-projects_slide-item pos-rel">
+							<img src="img/project2.jpg" alt="" class="pos-rel">
+							<div class="our-projects_slide-description pos-abs">
+								<h4>Сск “Олимп”</h4>
+								<p>Световое оформление форума “Шубы-2019”</p>
+							</div>
+						</div>
+						<div class="our-projects_slide-item">
+							<img src="img/project1.jpg" alt="" class="pos-rel">
+							<div class="our-projects_slide-description pos-abs">
+								<h4>Сск “Олимп”</h4>
+								<p>Световое оформление форума “Шубы-2019”</p>
+							</div>
+						</div>
+						<div class="our-projects_slide-item">
+							<img src="img/project2.jpg" alt="" class="pos-rel">
+							<div class="pos-abs">
+								<h4>Сск “Олимп”</h4>
+								<p>Световое оформление форума “Шубы-2019”</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="catalog">
+			<div class="container">
+				<h2>Каталог продукции</h2>
+				<!-- Tab links -->
+				<div class="catalog_tabs">
+					<button class="catalog_tablinks active" onclick="openTab(event, 'Robe')">Robe</button>
+					<button class="catalog_tablinks" onclick="openTab(event, 'Compulite')">Compulite</button>
+				</div>
+				<!-- Tab content -->
+				<div id="Robe" class="catalog_tabcontent">
+					<div class="catalog_tabcontent-item pos-rel">
+						<img src="img/robe1.jpg" alt="">
+						<div class="catalog_tabcontent-item_description pos-abs">
+							<h4>Статичные светодиодные приборы</h4>
+						</div>
+					</div>
+					<div class="catalog_tabcontent-item pos-rel">
+						<img src="img/robe2.jpg" alt="">
+						<div class="catalog_tabcontent-item_description pos-abs">
+							<h4>Контроллеры</h4>
+						</div>
+					</div>
+					<div class="catalog_tabcontent-item pos-rel">
+						<img src="img/robe3.jpg" alt="">
+						<div class="catalog_tabcontent-item_description pos-abs">
+							<h4>Аксессуары</h4>
+						</div>
+					</div>
+				</div>
+				<div id="Compulite" class="catalog_tabcontent">
+					<div class="catalog_tabcontent-item pos-rel">
+						<img src="img/robe3.jpg" alt="">
+						<div class="catalog_tabcontent-item_description pos-abs">
+							<h4>Аксессуары</h4>
+						</div>
+					</div>
+					<div class="catalog_tabcontent-item pos-rel">
+						<img src="img/robe2.jpg" alt="">
+						<div class="catalog_tabcontent-item_description pos-abs">
+							<h4>Контроллеры</h4>
+						</div>
+					</div>
+					<div class="catalog_tabcontent-item pos-rel">
+						<img src="img/robe1.jpg" alt="">
+						<div class="catalog_tabcontent-item_description pos-abs">
+							<h4>Статичные светодиодные приборы</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="rent">
+			<div class="container">
+				<h2>Аренда оборудования</h2>
+				<div class="flex rent_flex">
+					<div class="rent_description">
+						<p>Мы занимаемся прокатом светового и сценического оборудования ведущих мировых производителей, таких как Robe, SGM, StudioDue, ChainMaster, Milos, Universal Effects, ArtLighting, MobilTech, Lampo, Martin, Spotlight, Compulite, Eurolite и др.</p>
+					</div>
+					<div class="rent_slider-container pos-rel">
+						<div class="flex">
+							<h4>Новое оборудование, предоставляемое в аренду:</h4>
+							<div class="owl-carousel_nav">
+								<button><img src="img/prev-button.svg" alt="" class="rent_prev-button"></button>
+								<button><img src="img/next-button.svg" alt="" class="rent_next-button"></button>
+							</div>
+						</div>
+						<div class="rent_owl-carousel owl-carousel owl-theme">
+							<div class="rent_slide-item">
+								<div class="rent-item_image">
+									<img src="img/new1.jpg" alt="">
+								</div>
+								<div class="rent-item_description">
+									<h4>Robe Robin ParFect 100</h4>
+									<ul class="rent-item_ul">
+										<li>Источник света 12 светодиодов RGBW  по 15 Вт каждый</li>
+										<li>Угол раскрытия 7°</li>
+										<li>В комплекте рассеивающая линза 40°</li>
+										<li>Потребляемая мощность 200 Вт</li>
+									</ul>
+								</div>
+							</div>
+							<div class="rent_slide-item">
+								<div class="rent-item_image">
+									<img src="img/new1.jpg" alt="">
+								</div>
+								<div class="rent-item_description">
+									<h4>Robe Robin ParFect 100</h4>
+									<ul class="rent-item_ul">
+										<li>Источник света 12 светодиодов RGBW  по 15 Вт каждый</li>
+										<li>Угол раскрытия 7°</li>
+										<li>В комплекте рассеивающая линза 40°</li>
+										<li>Потребляемая мощность 200 Вт</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="news">
+			<div class="container">
+				<div class="news_top-line flex">
+					<h2>Новости</h2>
+					<button class="background-button">Все новости</button>
+				</div>
+				<div class="news_item">
+					<article class="news_main-item">
+						<div class="flex">
+							<div class="main-article_img">
+								<img src="img/main-article.jpg" alt="">
+							</div>
+							<div class="main-article_description">
+								<div class="main-article_description-top">
+									<h4>Семинар Milos</h4>
+									<span>27.01.2019</span>
+								</div>
+								<p>Наши сотрудники прошли последний семинар от компании Milos. Они получили новый объем знаний, который позволит нашей компании заниматься оборудованием не только мероприятий, но производственных помещений.</p>
+								<a href="" class="article_link">Читать полностью...</a>
+							</div>
+						</div>
+					</article>
+					<article class="news_item">
+						<div class="article_description">
+							<h4>Выставка Prolight+Sound NAMM Russia 2016</h4>
+							<p>30 контрактов, тысячи восторженных посетителей...</p>
+						</div>
+						<div class="article_bottom-line">
+							<img src="img/article1.jpg" alt="">
+							<span>27.01.2019</span>
+						</div>
+					</article>
+					<article class="news_item">
+						<div class="article_description">
+							<h4>Семинар  <br>Robe</h4>
+							<p>30 января 2017 года наши сотрудники побывали в Берлине..</p>
+						</div>
+						<div class="article_bottom-line">
+							<img src="img/article2.jpg" alt="">
+							<span>27.01.2019</span>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="footer_address">
+				<address>
+					<a href="tel:+(812) 710-80-25">(812) 710-80-25</a>
+					<p>191180, Санкт-Петербург, Набережная реки Фонтанки, 90, корпус 1</p>
+					<a href="mailto:mail@translight.ru">mail@translight.ru</a>
+				</address>
+			</div>
+			<div class="footer_nav">
+				<nav>
+					<ul>
+						<li><a href="">О компании</a></li>
+						<li><a href="">Новости</a></li>
+						<li><a href="">Каталог</a></li>
+						<li><a href="">Аренда</a></li>
+						<li><a href="">Наши проекты</a></li>
+						<li><a href="">Сервисное обслуживание</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="copyright">
+				<span>© 2019 ЗАО «Транслайт». Все права защищены.</span>
+				<a href="">Разработка и дизайн - D-e-n.ru</a>
+			</div>
+		</div>
+	</footer>
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.js"></script>
+	<script src="js/common.js"></script>	
+	<script>
+		//Вкладки
+		function openTab(evt, tabName) {
+		    // Declare all variables
+		    var i, tabcontent, tablinks;
+
+		    // Get all elements with class="tabcontent" and hide them
+		    tabcontent = document.getElementsByClassName("catalog_tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+
+		    // Get all elements with class="tablinks" and remove the class "active"
+		    tablinks = document.getElementsByClassName("catalog_tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+
+		    // Show the current tab, and add an "active" class to the button that opened the tab
+		    document.getElementById(tabName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+	</script>
+</body>
+</html>
