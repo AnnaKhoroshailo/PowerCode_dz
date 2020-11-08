@@ -22,8 +22,6 @@ body {
 .cities {
 	font-size: 0;
 	text-align: center;
-	border-left: 5px solid #fff;
-	border-bottom: 5px solid #fff;
 }
 .cities li {
 	display: inline-block;
@@ -32,6 +30,12 @@ body {
 	border-right: 5px solid #fff;
 	border-top: 5px solid #fff;
 	padding: 20px 0;
+}
+.border-left {
+	border-left: 5px solid #fff;
+}
+.border-bottom {
+	border-bottom: 5px solid #fff;
 }
 .cities p {
 	padding-top: 5px;
