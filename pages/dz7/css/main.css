@@ -32,7 +32,12 @@ body {
 	font-size: 16px;
 	border-right: 5px solid #fff;
 	border-top: 5px solid #fff;
+}
+.cities div {
 	padding: 20px 0;
+}
+.cities li div:hover {
+	opacity: 0.5;
 }
 .city {
 	padding-bottom: 8px;
@@ -41,45 +46,42 @@ body {
 sup {
 	font-size: 8px;
 }
-.cities li div:hover {
-	opacity: 0.5;
-}
 .cities li.cities_item-w-50 {
 	width: 50%;
 }
 .cities li.cities_item-w-100 {
 	width: 100%;
 }
-.cities li:nth-child(1) {
+.cities li:nth-child(1) div {
 	background: #3399CC;
 }
-.cities li:nth-child(2) {
+.cities li:nth-child(2) div {
 	background: #33CCCC;
 }
-.cities li:nth-child(3) {
+.cities li:nth-child(3) div {
 	background: #996699;
 }
-.cities li:nth-child(4) {
+.cities li:nth-child(4) div {
 	background: #C24747;
 }
-.cities li:nth-child(5) {
+.cities li:nth-child(5) div {
 	background: #E2674A;
 }
-.cities li:nth-child(6) {
+.cities li:nth-child(6) div {
 	background: #FFCC66;
 }
-.cities li:nth-child(7) {
+.cities li:nth-child(7) div {
 	background: #99CC99;
 }
-.cities li:nth-child(8) {
+.cities li:nth-child(8) div {
 	background: #669999;
 }
-.cities li:nth-child(9) {
+.cities li:nth-child(9) div {
 	background: #CC6699;
 }
-.cities li:nth-child(10) {
+.cities li:nth-child(10) div {
 	background: #339966;
 }
-.cities li:nth-child(11) {
+.cities li:nth-child(11) div {
 	background: #666699;
 }
