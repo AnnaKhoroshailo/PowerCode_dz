@@ -22,6 +22,9 @@ body {
 .cities {
 	font-size: 0;
 	text-align: center;
+	background: #fff;
+	border-left: 5px solid #fff;
+	border-bottom: 5px solid #fff;
 }
 .cities li {
 	display: inline-block;
@@ -31,19 +34,14 @@ body {
 	border-top: 5px solid #fff;
 	padding: 20px 0;
 }
+.city {
+	padding-bottom: 8px;
+	display: inline-block;
+}
 sup {
 	font-size: 8px;
 }
-.border-left {
-	border-left: 5px solid #fff;
-}
-.border-bottom {
-	border-bottom: 5px solid #fff;
-}
-.cities p {
-	padding-top: 5px;
-}
-.cities li:hover {
+.cities li div:hover {
 	opacity: 0.5;
 }
 .cities li.cities_item-w-50 {
@@ -51,6 +49,9 @@ sup {
 }
 .cities li.cities_item-w-100 {
 	width: 100%;
+}
+.cities li:nth-child(1) {
+	background: #3399CC;
 }
 .cities li:nth-child(2) {
 	background: #33CCCC;
