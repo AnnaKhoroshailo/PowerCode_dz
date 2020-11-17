@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.chess {
+	width: 45%;
+	margin: 10px auto;
+}
+img {
+	max-width: 80%;
+	max-height: 100%;
+}
+.ba-square-box {
+	position: relative;
+	width: 12.5%;
+	overflow: hidden;
+	display: inline-block;
+}
+.ba-square-content { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	text-align: center;
+	padding: 10px;
+}
+.ba-square-box:before { /*квадрат*/
+	content: '';
+	display: block;
+	padding-top: 100%; /*от ширины*/
+}
+.chess {
+	font-size: 0;
+}
+.ba-square-box:nth-of-type(2n) .ba-square-content {
+	background: #333;
+}
+.ba-square-box:nth-of-type(8n) ~ .ba-square-box:nth-of-type(2n) .ba-square-content {
+	background: #fff;
+}
+.ba-square-box:nth-of-type(8n) ~ .ba-square-box:nth-of-type(2n+1) .ba-square-content {
+	background: #333;
+}
+.ba-square-box:nth-of-type(16n) ~ .ba-square-box:nth-of-type(2n) .ba-square-content {
+	background: #333;
+}
+.ba-square-box:nth-of-type(16n) ~ .ba-square-box:nth-of-type(2n+1) .ba-square-content {
+	background: #fff;
+}
+
+.ba-square-box:nth-of-type(24n) ~ .ba-square-box:nth-of-type(2n) .ba-square-content {
+	background: #fff;
+}
+.ba-square-box:nth-of-type(24n) ~ .ba-square-box:nth-of-type(2n+1) .ba-square-content {
+	background: #333;
+}
+.ba-square-box:nth-of-type(32n) ~ .ba-square-box:nth-of-type(2n) .ba-square-content {
+	background: #333;
+}
+.ba-square-box:nth-of-type(32n) ~ .ba-square-box:nth-of-type(2n+1) .ba-square-content {
+	background: #fff;
+}
+.ba-square-box:nth-of-type(40n) ~ .ba-square-box:nth-of-type(2n) .ba-square-content {
+	background: #fff;
+}
+.ba-square-box:nth-of-type(40n) ~ .ba-square-box:nth-of-type(2n+1) .ba-square-content {
+	background: #333;
+}
+.ba-square-box:nth-of-type(48n) ~ .ba-square-box:nth-of-type(2n) .ba-square-content {
+	background: #333;
+}
+.ba-square-box:nth-of-type(48n) ~ .ba-square-box:nth-of-type(2n+1) .ba-square-content {
+	background: #fff;
+}
+.ba-square-box:nth-of-type(56n) ~ .ba-square-box:nth-of-type(2n) .ba-square-content {
+	background: #fff;
+}
+.ba-square-box:nth-of-type(56n) ~ .ba-square-box:nth-of-type(2n+1) .ba-square-content {
+	background: #333;
+}
+
+
+
