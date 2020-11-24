@@ -1,0 +1,28 @@
+.container {
+	width: 80%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.articles {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.news_item {
+    width: 32%;
+}
+.news_item-main {
+    width: 66%;
+}
+@media screen and (max-width: 767px) {
+	.container {
+		width: 100%;
+	}
+	.news_item {
+	    width: 49%;
+	}
+	.news_item-main {
+	    width: 100%;
+	}
+}

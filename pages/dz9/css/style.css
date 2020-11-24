@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #eee;
+}
+img {
+	width: 100%;
+}
+h2 {
+	color: #fff;
+}
+h2, h3 {
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 20px;
+}
+.flex-h100 {
+	display: flex;
+	align-items: stretch;
+}
+.news_item {
+	background: #fff;
+	margin-top: 20px;
+}
+.news_item-main {
+	background: url(../img/old-car.jpg) no-repeat center center/cover;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 300px;
+    width: 100%;
+}
+.news_item p {
+	color: #333;
+}
+.news_item-main p {
+	color: #eee;
+}
+.news_author {
+	border-radius: 50%;
+	max-width: 50px;
+	margin-top: 50px;
+}
+.news_description {
+	padding: 20px;
+}
