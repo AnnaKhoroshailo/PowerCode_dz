@@ -142,7 +142,7 @@
     width: 100%;
     height: 100%;  
     transform-origin: bottom center;
-    animation: spin 25s linear 5s infinite;
+    animation: spin 20s linear 5s infinite;
 }
 
 .sun div {
@@ -273,27 +273,27 @@
 .cloud-1 {
     top: 10px;
     transform: scale(0.5) scale(-1, 1);
-    animation-duration: 16s; 
+    animation-duration: 14s; 
     animation-delay: 6s;
 }
 
 .cloud-2 {
     top: 50px;
     transform: scale(0.7);
-    animation-duration: 14s;
+    animation-duration: 10s;
     animation-delay: 4s;
 }
 
 .cloud-3 {
     top: 100px;
     transform: scale(0.9) scale(-1, 1);
-    animation-duration: 12s;
+    animation-duration: 8s;
     animation-delay: 2s;
 }
 
 .cloud-4 {
     top: 170px;
-    animation-duration: 10s;
+    animation-duration: 6s;
 }
 
 .sea {
