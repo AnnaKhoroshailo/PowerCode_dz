@@ -1,7 +1,7 @@
 console.log("Заглавная первая буква");
 function ucFirst(str) {
 	let first=str.charAt(0).toUpperCase();
-	let rest=str.slice(1)
+	let rest=str.slice(1) //или string.substring(start, end)
 	return first+rest;
 }
 console.log(ucFirst("вася"));
