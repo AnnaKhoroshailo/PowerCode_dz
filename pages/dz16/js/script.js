@@ -12,10 +12,10 @@ function slice (n) {
 	let str=[];
 	for(let i=0; i<n; i++) {
 		arr[i]=i+1;
-		if(arr[i]%3==0) {
+		if(arr[i]%3==0 && arr[i]%5!=0) {
 			str[i]="fizz";
 		} 
-		else if(arr[i]%5==0) {
+		else if(arr[i]%5==0 && arr[i]%3!=0) {
 			str[i]="buzz";
 		}
 		else if(arr[i]%3==0 && arr[i]%5==0) {
