@@ -45,7 +45,7 @@ function lottery() {
     let user_num5=parseInt(prompt("Введите 5 число от 1 до 36 для лотереи"));
     let user_num6=parseInt(prompt("Введите 6 число от 1 до 36 для лотереи"));
     let min=1;
-    let max=8;
+    let max=36;
     let rusut=0;
     let num="";
     let verify;
