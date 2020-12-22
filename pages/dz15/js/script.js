@@ -70,3 +70,61 @@ function lottery() {
 }
 
 lottery();
+
+
+console.log("Лотерея правильный способ через 2 массива");
+let userNumbers=[];
+let lotteryCount=36;
+let lotteryNumbers=6;
+let lotteryRandom=[];
+let result=0;
+
+function addUserNumbers() {
+    for(let i=0; i<lotteryNumbers; i++) {
+        userNumbers.push(parseInt(prompt(`Введите ${i+1} число от 1 до ${lotteryCount}`)))
+    }
+}
+
+function addRandomNumbers() {
+    for(let i=0; i<lotteryNumbers; i++) {
+        lotteryRandom.push(getRandomNumbers());
+    }
+}
+
+function getRandomNumbers() {
+    let min=1;
+    return Math.floor(Math.random()*(lotteryCount-min+1))+min;
+}
+
+function showUserNumbers() {
+    console.log(`Числа, что вы ввели:  ${userNumbers}`);
+}
+
+function showGetNumbers() {
+    console.log(`Числа, что вы выпали:  ${verifyNumbers()}`);
+}
+
+function verifyNumbers() {
+    let response=[];
+    for(let i=0; i<lotteryRandom.length; i++) {
+        let verify=false;
+        for(let j=0; j<userNumbers.length; j++) {
+            if(lotteryRandom[i]===userNumbers[j]) {
+                verify=true;
+                result++;
+            }
+        }
+        response.push(`${lotteryRandom[i]}-${verify}`);
+    }
+    return response.join(', ');
+}
+
+function showResult() {
+    console.log(`Результат: ${result}/${lotteryNumbers}`);
+}
+
+addUserNumbers();
+addRandomNumbers();
+showUserNumbers();
+showGetNumbers();
+showResult();
