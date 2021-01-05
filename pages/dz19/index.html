@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h1>Список задач на 2021 год</h1>
+	</header>
+	<main>
+		<section class="todo container">
+			<div class="todo__tasks" id="todo__tasks">
+				<h2 class="todo__title">Мои задачи</h2>
+				<button type="button" class="todo__button" onclick="openModal();">Добавить новую</button>
+				<ol class="todo__tasks-list" id="todo__tasks-list"></ol>
+			</div>
+			<div class="todo__completed" id="todo__completed">
+				<h2 class="todo__title">Выполненнные задачи</h2>
+				<ol class="todo__completed-list" id="todo__completed-list"></ol>
+			</div>
+			<div class="todo__modal" id="todo__modal">
+				<div class="todo__modal-block">
+					<h3 class="todo__title">Новая задача:</h3>
+					<form action="" class="todo__form">
+						<textarea class="todo__form-task" id="todoTask"></textarea>
+						<button type="button" class="todo__button" onclick="addTask();">Добавить</button>
+					</form>
+					<button type="button" class="todo__button todo__button--close" onclick="closeModal();">x</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="js/script.js"></script>
+</body>
+</html>
