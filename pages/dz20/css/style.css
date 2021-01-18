@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 15px;
+}
+header {
+	height: 100vh;
+	position: relative;
+}
+.slider-item {
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.slider-item__content {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+h2 {
+	font-size: 50px;
+}
+.products {
+	margin-top: 20px;
+	display: flex;
+}
+.products-item:focus {
+	outline: none;
+}
+.products-item {
+	padding: 10px;
+}
+.products-item__content {
+	padding-top: 10px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	overflow: hidden;
+	height: 100%;
+}
+.products-item__img {
+	padding-top: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 15px;
+}
+.products-item__name, .products-item__description {
+	font-family: sans-serif;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.products-item__name {
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+}
+.products-item__description {
+	font-size: 16px;
+	text-align: justify;
+}
+.slick-dots {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+.slick-dots li {
+	padding: 5px;
+	cursor: pointer;
+}
+.slick-dots button {
+	background: #ccc;
+	width: 10px;
+	height: 10px;
+	outline: none;
+	border: 0;
+	font-size: 0;
+	border-radius: 50%;
+	margin: 0;
+}
+.slick-dots .slick-active button {
+	background: #08c;
+}
+.slick-arrow {
+	position: absolute;
+	top: calc(50% - 40px);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: rgba(0,0,0,.5);
+	z-index: 5;
+	border: 0;
+	outline: none;
+	font-size: 0;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.slick-arrow:hover {
+	background: rgba(0,0,0,.7);
+}
+.slick-arrow:after {
+	content: '';
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 11px;
+	border: 3px solid #fff;
+	transform: rotate(45deg);
+}
+.slick-prev	{
+	left: 15px;
+}
+.slick-next	{
+	right: 15px;
+}
+.slick-prev:after {
+	left: 13px;
+	border-right-color: transparent;
+	border-top-color: transparent;
+}
+.slick-next:after {
+	right: 13px;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+}
