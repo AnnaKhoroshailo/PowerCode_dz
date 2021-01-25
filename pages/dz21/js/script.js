@@ -66,9 +66,9 @@ console.log(sumActive2);
 
 
 products.forEach(product=>{
-	product.is_phone="true";
+	product.is_phone=true;
 	if(product.price>800) {
-		product.premium="true";
+		product.premium=true;
 	}
 });
 console.log(products);
