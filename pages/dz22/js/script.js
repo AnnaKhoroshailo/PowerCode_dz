@@ -18,7 +18,7 @@ function getMinMax(param,...args) {
 		});
 		console.log("Минимальный", min);
 	}
-	if(param=='max') {
+	else if(param=='max') { //если else-подразумеваем, что может быть одновременно макс и мин
 		let max=args[0];
 		args.forEach(item=>{ 
 			if(item>max) {
