@@ -43,4 +43,5 @@ console.log(house_01.getHouseAddress());
 let house_02=Object.create(house);
 house_02.attic=false;
 house_02.address='Победоносная, 20';
-house_01.showInfo.call(house_02, house_02.attic, house_02.address);
+house_02.showInfo(house_02.attic, house_02.address);
+console.log(house_01.getHouseAddress.call(house_02, house_02.address));
