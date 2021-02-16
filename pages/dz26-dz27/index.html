@@ -31,9 +31,32 @@
 		</nav>
 	</div>
 	<div class="content">
-		<h1>Мои заказы</h1>
+		<h1>Мои питомцы</h1>
+		<h2>Поиск питомца по ID</h2>
+		<form class="search-pet" name="searchPet">	
+			<input type="text" name="petId" placeholder="ID питомца">
+			<button type="button" id="searchPet">Поиск</button>
+		</form>
+		<div class="users" id="pets">
+		</div>
+
+		<h2>Поиск питомца по Статусу</h2>
+		<form class="search-pet" name="searchPetStatus">
+			<select name="petStatus">
+			    <option value="available">available</option>
+			    <option value="pending">pending</option>
+			    <option value="sold">sold</option>
+			</select>
+			<button type="button" id="searchPetStatus">Поиск</button>
+		</form>
+		<div class="users" id="petsStatus">
+		</div>
 	</div>
-	
+
 	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+		document.getElementById('searchPet').addEventListener('click',searchPet) 
+		document.getElementById('searchPetStatus').addEventListener('click',searchPetByStatus) 
+	</script>
 </body>
 </html>
