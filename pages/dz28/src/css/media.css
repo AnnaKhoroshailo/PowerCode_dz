@@ -1,0 +1,11 @@
+@media screen and (max-width: 767px) {
+  .d-flex {
+    flex-wrap: wrap; }
+  .header-menu {
+    margin: 30px 0; }
+    .header-menu__item {
+      padding: 0 10px; }
+  .jc-mob-center {
+    justify-content: center; }
+  .section__item {
+    flex: 0 0 100%; } }
