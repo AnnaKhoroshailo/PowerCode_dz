@@ -1,0 +1,34 @@
+.Product {
+	background: #ccc;
+	flex: 0 0 31%;
+	margin: 1%;
+	&__img {
+		margin-bottom: 10px;
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	}
+	&__name {
+		font-size: 24px;
+		line-height: 1.5;
+		color: #758374;
+		text-align: center;
+	}
+	&__year {
+		text-align: center;
+		color: #08c;
+		padding-bottom: 15px;
+	}
+	&__button {
+		display: inline-block;
+		width: 100%;
+		padding: 8px 15px;
+		text-align: center;
+		background-color: #08c;
+		color: #fff;
+		outline: none;
+		border: none;
+		border-radius: 5px;
+	}
+}

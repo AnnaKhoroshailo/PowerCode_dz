@@ -1,0 +1,27 @@
+.Header {
+  position: fixed;
+  background: #eee;
+  height: 80px;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  &__List {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    list-style-type: none;
+  }
+  &__Item {
+    a {
+      color: #ccc;
+      display: block;
+      padding: 10px 15px;
+      transition: all 0.3s;
+      &.active, &:hover {
+        background: #555;
+      }
+    }
+  }
+}
