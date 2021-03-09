@@ -1,0 +1,58 @@
+.Product {
+	background: #ccc;
+	flex: 0 0 31%;
+	margin: 1%;
+	position: relative;
+	&__img {
+		margin-bottom: 10px;
+		padding-top: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	&__name {
+		font-size: 24px;
+		line-height: 1.5;
+		color: #758374;
+		text-align: center;
+	}
+	&__year {
+		text-align: center;
+		color: #08c;
+	}
+	&__price {
+		font-size: 24px;
+		line-height: 1.5;
+		color: red;
+		text-align: center;
+	}
+	&__button, &__button-buy {
+		display: inline-block;
+		width: 100%;
+		padding: 8px 15px;
+		text-align: center;
+		background: #758374;
+		color: #fff;
+		outline: none;
+		border: none;
+		border-radius: 5px;
+		margin-top: 15px;
+	}
+	&__button-buy {
+		background-color: #08c;
+		font-size: 16px;
+		margin-top: 15px;
+		cursor: pointer
+	}
+	&__button-like {
+		cursor: pointer;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		background: none;
+		outline: none;
+		border: none;
+		color: red;
+		font-size: 30px;
+	}
+}
