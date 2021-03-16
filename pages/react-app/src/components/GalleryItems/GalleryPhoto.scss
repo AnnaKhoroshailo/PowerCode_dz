@@ -1,0 +1,22 @@
+.GalleryPhoto {
+	background: #ccc;
+	flex: 0 0 31%;
+	margin: 1%;
+	position: relative;
+	&__img {
+		margin-bottom: 10px;
+		padding-top: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	&__title {
+		font-size: 24px;
+		line-height: 1.5;
+		color: #758374;
+		text-align: center;
+		text-transform: capitalize;
+		margin-bottom: 10px;
+		padding: 0 5px;
+	}
+}

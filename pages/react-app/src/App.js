@@ -3,6 +3,8 @@ import Header from "./components/Header/Header";
 import Home from "./views/Home/Home";
 import Products from "./views/Products/Products";
 import ProductItem from "./views/Products/ProductItem";
+import Gallery from "./views/Gallery/Gallery";
+import Users from "./views/Users/Users";
 import NotFound404 from "./views/NotFound404/NotFound404";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
@@ -22,6 +24,12 @@ function App() {
               </Route>
               <Route exact path="/products/:id">
                 <ProductItem/>
+              </Route>
+              <Route exact path="/gallery">
+                <Gallery/>
+              </Route>
+              <Route exact path="/users">
+                <Users/>
               </Route>
               <Route path="*"> 
                 <NotFound404/>

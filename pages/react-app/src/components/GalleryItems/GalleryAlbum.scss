@@ -1,0 +1,13 @@
+.GalleryAlbum {
+  margin-bottom: 30px;
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    color: #08c;
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1%;
+  }
+}

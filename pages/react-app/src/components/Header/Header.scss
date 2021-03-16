@@ -1,5 +1,6 @@
 .Header {
   position: fixed;
+  z-index: 5;
   background: #eee;
   height: 80px;
   top: 0;
@@ -10,17 +11,17 @@
   &__List {
     display: flex;
     justify-content: space-between;
-    max-width: 600px;
     list-style-type: none;
   }
   &__Item {
     a {
-      color: #ccc;
+      color: #333;
       display: block;
       padding: 10px 15px;
       transition: all 0.3s;
       &.active, &:hover {
         background: #555;
+        color: #ccc;
       }
     }
   }

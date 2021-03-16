@@ -1,5 +1,5 @@
 import './Products.scss';
-import Product from "../../components/Product/Product";
+import Auto from "../../components/Auto/Auto";
 
 function Products() {
   let cars=[
@@ -26,7 +26,7 @@ function Products() {
     }
   ]
   let carItems=cars.map((car, index)=>{ //перебор массива
-    return <Product product={car} key={index} />
+    return <Auto product={car} key={index} />
   })
   return (
     <div className="Products">

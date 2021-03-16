@@ -1,8 +1,8 @@
-import './Product.scss';
+import './Auto.scss';
 import { Link } from 'react-router-dom';
 import React from 'react';
 
-class Product extends React.Component {
+class Auto extends React.Component {
   constructor(props) { 
     super(props);
     this.state={ 
@@ -33,12 +33,12 @@ class Product extends React.Component {
         <div className="Product__price">{product.price}</div>
         <Link to={'/products/' + product.id} className="Product__button">Подробнее</Link>
         
-          <button type='button' className='Product__button-buy' onClick={this.toBuy}>{this.state.isInCart ? 'В корзине': 'Купить'}</button>  
-          <button type='button' className='Product__button-like' onClick={this.toLike}>{this.state.isInLike ? '\u2764' : `\u2661` }</button>  
+        <button type='button' className='Product__button-buy' onClick={this.toBuy}>{this.state.isInCart ? 'В корзине': 'Купить'}</button>  
+        <button type='button' className='Product__button-like' onClick={this.toLike}>{this.state.isInLike ? '\u2764' : `\u2661` }</button>  
         
       </div>
     )
   }
 }
 
-export default Product;
+export default Auto;
