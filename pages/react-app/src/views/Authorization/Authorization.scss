@@ -9,7 +9,11 @@
   }
   &__input {
     margin: 5px 0;
-    padding: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #08c;
+    min-width: 250px;
   }
   &__button {
     background-color: #08c;
@@ -23,5 +27,9 @@
     outline: none;
     border: none;
     border-radius: 5px;
+    min-width: 250px;
+  }
+  &__error {
+    color: red;
   }
 }
