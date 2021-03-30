@@ -1,3 +1,4 @@
+import React, { Suspense } from 'react';
 import './App.scss';
 import Header from "./components/Header/Header";
 import Home from "./views/Home/Home";
@@ -9,6 +10,7 @@ import Authorization from "./views/Authorization/Authorization";
 import Registration from "./views/Registration/Registration";
 import NotFound404 from "./views/NotFound404/NotFound404";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+const ElementsUi=React.lazy(()=>import("./views/ElementsUi/ElementsUi"));
 
 function App() {
   return (
@@ -38,6 +40,11 @@ function App() {
               </Route>
               <Route exact path="/registration">
                 <Registration/>
+              </Route>
+              <Route exact path="/elements">
+                <Suspense fallback={<div>Загрузка...</div>}>
+                  <ElementsUi/>
+                </Suspense>
               </Route>
               <Route path="*"> 
                 <NotFound404/>

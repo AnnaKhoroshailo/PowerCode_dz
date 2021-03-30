@@ -68,7 +68,9 @@ class Authorization extends React.Component {
       axios.post('https://jsonplaceholder.typicode.com/users',
         data
       ).then(() => {
-        swal("Успех", "Вы успешно авторизовались!", "success");
+        swal("Успех", "Вы успешно авторизовались!", "success").then(()=>{
+          window.open("/");
+        })
         this.setState({
           loading: false
         })
@@ -90,7 +92,7 @@ class Authorization extends React.Component {
         <form onSubmit={this.login} className="Authorization__form">
           <input placeholder="Email" name="email" value={email} onChange={this.change} className="Authorization__input" />
           {isErrorEmail && <span className="Authorization__error">{errorEmail}</span>}  
-          <input placeholder="Пароль" name="password" value={password} onChange={this.change} className="Authorization__input" />  
+          <input type="password" placeholder="Пароль" name="password" value={password} onChange={this.change} className="Authorization__input" />  
           {isErrorPassword && <span className="Authorization__error">{errorPassword}</span>}
           <button className="Authorization__button">Войти</button>
         </form>
